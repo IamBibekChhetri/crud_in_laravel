@@ -62,6 +62,12 @@ input[type=submit], button{
 <input type="text" name="address" value="{{ $practise->address }}" >
 </label> 
 <br>
+<label for="country">Country</label>
+    <select id="country" name="country" value="{{ $practise->country }}">
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+      <option value="USA">USA</option>
+    </select>
 <label>Phone:<br>
 <input type="number" name="phone" value="{{ $practise->phone }}">
 </label> 

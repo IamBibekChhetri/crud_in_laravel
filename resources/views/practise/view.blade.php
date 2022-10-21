@@ -56,6 +56,7 @@ button.add{
     <th>Name</th>
     <th>Address</th>
     <th>Phone No</th>
+    <th>Country</th>
     <th>action</th>
   </tr>
   </thead>
@@ -69,6 +70,7 @@ button.add{
   <td>{{ $abc->name }}</td>
   <td>{{ $abc->address }}</td>
   <td>{{ $abc->phone }}</td>
+  <td>{{ $abc->country }}</td>
    <td><a href="{{ route('practise.edit',$abc->id) }}"><button class="edit">Edit</button></a>  
    
    <form action="{{ route('practise.destroy',$abc->id) }}" method="POST">

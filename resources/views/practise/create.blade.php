@@ -31,7 +31,7 @@ input[type=number]{
   resize: vertical;
 }
 
-input[type=submit], button{
+input[type=submit]{
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -39,7 +39,14 @@ input[type=submit], button{
   border-radius: 4px;
   cursor: pointer;
 }
-
+button{
+    background-color: #800000	;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -59,6 +66,12 @@ input[type=submit], button{
 <input type="text" name="address" >
 </label> 
 <br>
+<label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+      <option value="USA">USA</option>
+    </select>
 <label>Phone:<br>
 <input type="number" name="phone" >
 </label> 
