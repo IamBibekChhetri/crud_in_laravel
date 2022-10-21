@@ -16,6 +16,9 @@ return new class extends Migration
         Schema::create('practises', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('address');
+            $table->string('number');
+            $table->file('image');
             $table->timestamps();
         });
     }

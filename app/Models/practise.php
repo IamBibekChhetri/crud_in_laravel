@@ -9,7 +9,7 @@ class practise extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id', 'name'
+        'id', 'name', 'address', 'phone'
 
 
     ];

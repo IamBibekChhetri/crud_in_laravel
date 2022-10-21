@@ -6,6 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit], button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
 <body>
     
 
@@ -17,10 +57,18 @@
 <input type="text" name="name" value="{{ $practise->name }}">
 </label> 
 <br>
+<br>
+<label>Address: <br>
+<input type="text" name="address" value="{{ $practise->address }}" >
+</label> 
+<br>
+<label>Phone:<br>
+<input type="number" name="phone" value="{{ $practise->phone }}">
+</label> 
+<br>
 
 
-
-<button type="submit">Submit Booking</button>
+<button type="submit">Submit</button>
 <br>
 <h1><a href="{{asset('practise/view')}}"></a><button>View Table</button></h1>
 <br>

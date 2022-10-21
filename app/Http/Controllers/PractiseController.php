@@ -42,7 +42,7 @@ class PractiseController extends Controller
             'name' => 'required',
             
         ]);
-      
+       
         practise::create($request->all());
        
         return redirect()->route('practise.index')
@@ -83,6 +83,7 @@ class PractiseController extends Controller
     {
         {
             $request->validate([
+                
                 'name' => 'required',
                 
             ]);
