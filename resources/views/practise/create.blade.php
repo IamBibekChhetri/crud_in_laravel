@@ -56,7 +56,7 @@ button{
 <body>
     
 
-<form action="{{route('practise.store')}}" method="POST">
+<form action="{{route('practise.store')}}" method="POST" enctype="multipart/form-data">
 @csrf
 <label>Name: <br>
 <input type="text" name="name" >

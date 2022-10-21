@@ -40,13 +40,16 @@ class PractiseController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-       
+        $imageName = time().'.'.$request->image->extension();         
+        $request->image->move(public_path('images'), $imageName);
+
         practise::create($request->all());
        
         return redirect()->route('practise.index')
                         ->with('success','Form created successfully.');
+                       
     }
 
     /**

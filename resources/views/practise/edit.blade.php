@@ -49,7 +49,7 @@ input[type=submit], button{
 <body>
     
 
-<form action="{{ route('practise.update',$practise->id) }}" enctype="" method="POST">
+<form action="{{ route('practise.update',$practise->id) }}" enctype="multipart/form-data" method="POST">
     @csrf
     @method('PUT')
 
